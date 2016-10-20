@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+#readout {
+  width: 800px;
+  height: 400px;
+  font-size: 200px;
+}
+
+button {
+  width: 400px;
+}
