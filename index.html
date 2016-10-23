@@ -8,21 +8,57 @@
   <!-- Stylesheets go here. -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
   <link rel="stylesheet" type="text/css" href="css/global.css" />
 </head>
 <body>
-  <div class="container-fluid">
+  <div class="andromida"></div>
+  <div id="spaceSpinner"></div>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <br />
+          <div class="well">
+            <h1 class="text-centered">W4D4 Stopwatch</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container" id="leftNav">
     <div class="row">
-      <div class="col-sm-12 text-center">
-        <br />
-        <input type="text" id="readout" class="text-center"/> <br /><br />
-        <button type="button" id="start" class="btn btn-default">Start</button>
-        <button type="button" id="reset" class="btn btn-default">Reset</button>
+      <div class="col-sm-2">
+        <div class="well text-center">
+          <label>Previous:</label>
+          <hr />
+          <div id="previousTimes">
+            <br />
+
+          </div>
+          <!-- <input type="text" id="previousTimes" name="previousTimes" class="text-center" value="0:00:0"/> -->
+        </div>
+      </div>
+      <div class="col-sm-10" id="mainContent">
+        <!-- <div class="container-fluid"> -->
+        <div class="row">
+          <div class="col-sm-12 text-center inline-block">
+            <div class=" well">
+              <br />
+              <input type="text" id="readout" class="text-center" value="0:00:0"/> <br /><br />
+              <button type="button" id="start" class="btn btn-default">Start</button>
+              <button type="button" id="reset" class="btn btn-default">Reset</button>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
       </div>
     </div>
   </div>
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment-with-locales.min.js"></script>
-  <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch"></script>
+  <!-- <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch"></script> -->
   <script type="text/javascript" src="js/global.js"></script>
 </body>
 </html>

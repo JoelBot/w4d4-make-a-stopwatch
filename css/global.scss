@@ -1,11 +1,98 @@
+@import 'palette.scss';
+
 * {
     box-sizing: border-box;
+    // border: 1px solid black;
 }
-#readout {
-    width: 800px;
-    height: 400px;
-    font-size: 200px;
+.andromeda:before {
+    content: ' ';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    background: url(../img/space.jpg) no-repeat 50%;
+    background-size: cover;
+    will-change: transform;
+    z-index: -1;
 }
+body {
+    // background-color: $color1; // Change to sweet gradient or space image with swirl
+    background: url('../img/space.jpg') no-repeat;
+
+    #spaceSpinner {
+        // transition: all 60s ease;
+        // transform: rotate(90deg);
+        // background: url('../img/space.jpg') no-repeat fixed;
+
+        // z-index: -1;
+        // width: 200vw;
+        // height: 200vh;
+        // margin-top: -100vh;
+        // margin-left: -100vw;
+        // opacity: .7;
+        // // -webkit-animation: h 420s linear infinite;
+        // animation: h 420s linear infinite;
+        // animation-name: h;
+        // animation-duration: 420s;
+        // animation-timing-function: linear;
+        // animation-delay: initial;
+        // animation-iteration-count: infinite;
+        // animation-direction: initial;
+        // animation-fill-mode: initial;
+        // animation-play-state: initial;
+        // background-size: 240px;
+        // -webkit-backface-visibility: visible;
+        // backface-visibility: visible;
+        // background-image: src'../img/papers.svg';
+
+    }
+
+    background-size: cover;
+    color: $color3;
+}
+header {
+
+    h1 {
+        text-align: center;
+        font-size: 7vw;
+    }
+
+}
+
+#leftNav {
+    #previousTimes {
+        width: 100%;
+        height: auto;
+        border: 1px solid $color5;
+        border-radius: 20px;
+    }
+}
+#mainContent {
+    #readout {
+        width: 100%;
+        height: 20vw;
+        font-size: 17vw;
+    }
+}
+.well {
+    background-color: $color2;
+    border-color: $color5;
+    border-radius: 20px;
+    box-shadow: 12px 12px 22px -2px $color3;
+    text-shadow: 1px 1px $color5;
+    input {
+        background-color: $color2;
+        border-color: $color5;
+        border-radius: 20px;
+        text-shadow: 1px 1px $color5;
+    }
+}
+
 button {
-    width: 400px;
+    width: 20vw;
+}
+.inline-block {
+    display: inline-block;
 }

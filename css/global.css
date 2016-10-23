@@ -1,13 +1,68 @@
+/* Coolors Exported Palette - coolors.co/f6511d-ffb400-00a6ed-7fb800-0d2c54 */
+/* Coolors Exported Palette - coolors.co/dcdcdd-c5c3c6-46494c-4c5c68-1985a1 */
+/* HSL */
+/* RGB */
 * {
   box-sizing: border-box;
 }
 
-#readout {
-  width: 800px;
-  height: 400px;
-  font-size: 200px;
+.andromeda:before {
+  content: ' ';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  background: url(../img/space.jpg) no-repeat 50%;
+  background-size: cover;
+  will-change: transform;
+  z-index: -1;
+}
+
+body {
+  background: url("../img/space.jpg") no-repeat;
+  background-size: cover;
+  color: #46494c;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 7vw;
+}
+
+#leftNav #previousTimes {
+  width: 100%;
+  height: auto;
+  border: 1px solid #1985a1;
+  border-radius: 20px;
+}
+
+#mainContent #readout {
+  width: 100%;
+  height: 20vw;
+  font-size: 17vw;
+}
+
+.well {
+  background-color: #c5c3c6;
+  border-color: #1985a1;
+  border-radius: 20px;
+  box-shadow: 12px 12px 22px -2px #46494c;
+  text-shadow: 1px 1px #1985a1;
+}
+
+.well input {
+  background-color: #c5c3c6;
+  border-color: #1985a1;
+  border-radius: 20px;
+  text-shadow: 1px 1px #1985a1;
 }
 
 button {
-  width: 400px;
+  width: 20vw;
+}
+
+.inline-block {
+  display: inline-block;
 }
